@@ -1,0 +1,44 @@
+.App {
+    text-align: center;
+    &_header{ 
+        border-bottom: 1px solid #ddd;
+        color: darkred;
+        padding: 10px 0; 
+    }
+    .formHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    input, button{
+        padding: 5px 10px;
+    }
+    button{
+        font-weight: bold; 
+        text-transform: uppercase; 
+        &:hover{
+            cursor: pointer;
+        }
+        &.danger{
+            background-color: darkred;
+            color: #fff;
+            border-color: transparent;
+            &[disabled]{
+                opacity: .5;
+            }
+        }
+        &[disabled]{
+            cursor: not-allowed;
+        }
+    }
+
+    ul{
+        max-width: 150px;
+        margin: 0 auto;
+        margin-top: 10px;
+        li{
+            text-align: left;
+        }
+    }
+  }
